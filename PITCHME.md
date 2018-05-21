@@ -24,13 +24,17 @@ Live streaming: Simultaneously record and broadcast video
 
 ## In general
 
-Camera --(raw file)--> encoder --(encoded file)--> Stream server(s) --(encoded file)--> Client
+Recorder --(raw file)--> encoder --(encoded file)--> Stream server(s) --(encoded file)--> Client
+
+Note:
+
+We focus on the section of Stream servers and Clients
 
 +++
 
 ## RTMP
 
-Camera --(raw file)--> encoder --(encoded file)--> Origin stream server --(flv with RTMP)--> Edge stream servers --(flv with RTMP)--> Adobe Flash Player
+Recorder --(raw file)--> encoder --(encoded file)--> Origin stream server --(flv with RTMP)--> Edge stream servers --(flv with RTMP)--> Adobe Flash Player
 
 +++
 
