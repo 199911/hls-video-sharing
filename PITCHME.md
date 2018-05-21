@@ -47,11 +47,27 @@ Recorder --(raw file)--> encoder --(encoded file)--> Origin stream server --(flv
 Note:
 
 HLS can solve the above problems
-
+Not using 80/443 port is critical problem. As we cannot create TCP socket in browser, we cannot get resource with browser only.
+Edge servers -> expensive
 ---
 
 # What is HTTP Live Streaming?
 
+- Designed and implemented by Apple
+- HTTP(S) based
+- Media can be served by Content Delivery Network
+
+Note:
+
+Apple's products have native support on this protocol
+We can use 80/443 port to get all resources
+
+Mentions browser support in somewhere?
+
++++
+
+Recorder --(raw file)--> encoder --(encoded file)--> Stream server --(Manifest file)--> HTML5 player with HLS support
+                                                       |--(encoded media files)--> CDN --(encoded media files)--^
 
 ---
 
