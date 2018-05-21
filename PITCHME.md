@@ -73,10 +73,26 @@ Recorder --(raw file)--> encoder --(encoded file)--> Stream server --(Manifest f
 
 # The HTML5 player framework - Video.js
 
+Notes:
+
+- what is it
+- player structure
+- browser support
+
 ---
 
 # Customizing Video.js
 
+Notes:
+
+- UI components
+- module
+- multiplexing
+
 ---
 
 # Demonstration
+
+Notes:
+
+OBS -> nginx-rtmp -> ngrok -> Github page player
