@@ -9,22 +9,15 @@ HTTP Live Streaming with Opensource HTML5 video player
 # Agenda
 
 - Live streaming introduction
-- What is HTTP Live Streaming?
+- What's wrong with RTMP?
+- HTTP Live Streaming
 - The HTML5 player framework - Video.js
 - Customizing Video.js
 - Demonstration
 
----
-
-# Live streaming introduction
-
-- Context
-- Live streaming terminlogy
-- Live streaming architecture
-
 +++
 
-## Context
+# Context
 
 - Focus on video delivery
 - Focus on desktop and mobile web client
@@ -33,6 +26,13 @@ Note:
 
 Will not mention too much video recording, encoding nor transcoding
 Will not discuss desktop and mobile apps
+
+---
+
+# Live streaming introduction
+
+- Live streaming terminlogy
+- Live streaming architecture
 
 +++
 
