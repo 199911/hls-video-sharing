@@ -21,11 +21,14 @@ HTTP Live Streaming with Opensource HTML5 video player
 
 - Focus on video delivery
 - Focus on desktop and mobile web client
+- Demo with code open-sourced
+    - Will not have code walkthrough
 
 Note:
 
-Will not mention too much video recording, encoding nor transcoding
+Will not mention detail of video recording, encoding nor transcoding
 Will not discuss desktop and mobile apps
+Don't have enough time, read the demo code yourself
 
 ---
 
@@ -130,13 +133,42 @@ Note:
 
 +++
 
+## HLS architecture
+
 ![HLS streaming data flow](images/HLS-Data-Flow.png "HLS streaming data flow")
 
 Note:
 
+- How HLS works
+    - RTMP feeding clients with a continuous stream of video fragments
+    - HLS give clients a list of video fragments, client get it one by one
 - CDN serve large video files
 - Streaming server serve small manifest file
     - manifest file is pointer to video files
+
++++
+
+## HLS manifest files (m3u8 playlist)
+
+![](images/hls-playlist.png)
+
+
+Note:
+
+- Entry point of HLS
+- m3u8 playlist contains a list of streams
+- Adaptive bitrate implement by automatically switch on these streams
+
++++
+
+## HLS manifest files (m3u8 stream)
+
+![](images/hls-stream.png)
+
+Note:
+
+- Each m3u8 stream contains a list of video fregments (.ts file)
+- Streaming server will continuously update these files
 
 ---
 
