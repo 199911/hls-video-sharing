@@ -178,18 +178,6 @@ Note:
 
 # Demonstration
 
-## Customizing Video.js 6
-
-Note:
-
-- Change options
-- Customize skin
-- Component
-
-+++
-
-# Demonstration
-
 ## Live streaming
 
 Note:
