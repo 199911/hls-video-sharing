@@ -8,7 +8,7 @@ HTTP Live Streaming with Opensource HTML5 video player
 
 # Agenda
 
-- Live streaming data flow
+- Live streaming introduction
 - What is HTTP Live Streaming?
 - The HTML5 player framework - Video.js
 - Customizing Video.js
@@ -16,13 +16,29 @@ HTTP Live Streaming with Opensource HTML5 video player
 
 ---
 
-# Live streaming data flow
+## Live streaming introduction (terminlogy)
 
 Live streaming: Simultaneously record and broadcast video
 
+Encode / Transcode: Convert video to other video file formats
+
+Bit rate: Size of the data stream when the video is playing
+
+Orgin stream server: "Seed" of the video delivery
+
+Edge stream server: Repeater of the origin stream server
+
+Note:
+
+Encode / Transcode: It may change the quality
+Encode ~= compile, convert raw video to some format can be played by common players
+Transcode ~= transpile, translate from one format to another
+Bit rate ~= video quality, units: kbps / mbps
+Edge stream server ~= content delievery network
+
 +++
 
-## In general
+## Live streaming introduction (data flow)
 
 Recorder --(raw file)--> encoder --(encoded file)--> Stream server(s) --(encoded file)--> Client
 
