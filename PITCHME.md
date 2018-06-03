@@ -42,26 +42,14 @@ Don't have enough time, read the demo code yourself
 ## Live streaming terminlogy
 
 - Live streaming: Simultaneously record and broadcast video
-- Encode / Transcode: Convert video to other video file formats
-- Bit rate: Size of the data stream when the video is playing
+- Encode: Convert raw video to "portable" video format
+- Transcode: Convert video from a format to another
 
 Note:
 
 Encode / Transcode: It may change the quality
 Encode ~= compile, convert raw video to some format can be played by common players
 Transcode ~= transpile, translate from one format to another
-Bit rate ~= video quality, units: kbps / mbps
-
-+++
-
-## Live streaming terminlogy
-
-- Orgin stream server: "Seed" of the video delivery
-- Edge stream server: Repeater of the origin stream server
-
-Note:
-
-Edge stream server ~= content delievery network
 
 +++
 
@@ -71,8 +59,9 @@ Edge stream server ~= content delievery network
 
 Note:
 
-We can use any encoding between recorder and stream server, as long as your stream server support it
-We focus on the section of Stream servers and Clients
+- Can use different coding in upstream and downstream
+    - Stream server need to transcode if different coding is used
+- We focus on the section of Stream servers and Clients
 
 ---
 
@@ -91,7 +80,10 @@ We focus on the section of Stream servers and Clients
 
 Note:
 
-Require adobe flash player to play video in flv format
+- Orgin stream server: "Seed" of the video delivery
+- Edge stream server: Repeater of the origin stream server
+    - Edge stream server ~= content delievery network
+- Require adobe flash player to play video in flv format
 
 +++
 
