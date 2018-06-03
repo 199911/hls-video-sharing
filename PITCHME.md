@@ -51,13 +51,18 @@ Edge stream server ~= content delievery network
 
 Note:
 
+We can use any encoding between recorder and stream server, as long as your stream server support it
 We focus on the section of Stream servers and Clients
 
 +++
 
-## RTMP
+## Straming with Real-Time Messaging Protocol (RTMP)
 
-Recorder --(raw file)--> encoder --(encoded file)--> Origin stream server --(flv with RTMP)--> Edge stream servers --(flv with RTMP)--> Adobe Flash Player
+![RTMP streaming data flow](images/RTMP-Data-Flow.png "RTMP streaming data flow")
+
+Note:
+
+Require adobe flash player to play video in flv format
 
 +++
 
@@ -65,13 +70,15 @@ Recorder --(raw file)--> encoder --(encoded file)--> Origin stream server --(flv
 
 - Flash is fading out
 - RTMP is not using 80/443 port
-- Require lots of edge servers
+- Edge servers are expensive
 
 Note:
 
+Not using 80/443 port is critical problem.
+- As we cannot create TCP socket in browser, we cannot get resource with browser only.
+- RTMP works well in mobile and desktop apps
 HLS can solve the above problems
-Not using 80/443 port is critical problem. As we cannot create TCP socket in browser, we cannot get resource with browser only.
-Edge servers -> expensive
+
 ---
 
 # What is HTTP Live Streaming?
@@ -96,7 +103,7 @@ Recorder --(raw file)--> encoder --(encoded file)--> Stream server --(Manifest f
 
 # The HTML5 player framework - Video.js
 
-Notes:
+Note:
 
 - what is it
 - player structure
