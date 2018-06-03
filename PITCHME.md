@@ -47,7 +47,7 @@ Edge stream server ~= content delievery network
 
 ## Live streaming introduction (data flow)
 
-Recorder --(raw file)--> encoder --(encoded file)--> Stream server(s) --(encoded file)--> Client
+![General streaming data flow](images/Live-Streaming-Data-Flow.png "General streaming data flow")
 
 Note:
 
