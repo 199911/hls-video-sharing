@@ -18,11 +18,9 @@ HTTP Live Streaming with Opensource HTML5 video player
 
 ## Live streaming introduction (terminlogy)
 
-Live streaming: Simultaneously record and broadcast video
-
-Encode / Transcode: Convert video to other video file formats
-
-Bit rate: Size of the data stream when the video is playing
+- Live streaming: Simultaneously record and broadcast video
+- Encode / Transcode: Convert video to other video file formats
+- Bit rate: Size of the data stream when the video is playing
 
 Note:
 
@@ -35,9 +33,8 @@ Bit rate ~= video quality, units: kbps / mbps
 
 ## Live streaming introduction (terminlogy)
 
-Orgin stream server: "Seed" of the video delivery
-
-Edge stream server: Repeater of the origin stream server
+- Orgin stream server: "Seed" of the video delivery
+- Edge stream server: Repeater of the origin stream server
 
 Note:
 
