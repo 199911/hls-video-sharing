@@ -24,16 +24,23 @@ Encode / Transcode: Convert video to other video file formats
 
 Bit rate: Size of the data stream when the video is playing
 
-Orgin stream server: "Seed" of the video delivery
-
-Edge stream server: Repeater of the origin stream server
-
 Note:
 
 Encode / Transcode: It may change the quality
 Encode ~= compile, convert raw video to some format can be played by common players
 Transcode ~= transpile, translate from one format to another
 Bit rate ~= video quality, units: kbps / mbps
+
++++
+
+## Live streaming introduction (terminlogy)
+
+Orgin stream server: "Seed" of the video delivery
+
+Edge stream server: Repeater of the origin stream server
+
+Note:
+
 Edge stream server ~= content delievery network
 
 +++
