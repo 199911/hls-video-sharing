@@ -16,7 +16,27 @@ HTTP Live Streaming with Opensource HTML5 video player
 
 ---
 
-## Live streaming introduction (terminlogy)
+# Live streaming introduction
+
+- Context
+- Live streaming terminlogy
+- Live streaming architecture
+
++++
+
+## Context
+
+- Focus on video delivery
+- Focus on desktop and mobile web client
+
+Note:
+
+Will not mention too much video recording, encoding nor transcoding
+Will not discuss desktop and mobile apps
+
++++
+
+## Live streaming terminlogy
 
 - Live streaming: Simultaneously record and broadcast video
 - Encode / Transcode: Convert video to other video file formats
@@ -31,7 +51,7 @@ Bit rate ~= video quality, units: kbps / mbps
 
 +++
 
-## Live streaming introduction (terminlogy)
+## Live streaming terminlogy
 
 - Orgin stream server: "Seed" of the video delivery
 - Edge stream server: Repeater of the origin stream server
@@ -42,7 +62,7 @@ Edge stream server ~= content delievery network
 
 +++
 
-## Live streaming introduction (data flow)
+## Live streaming architecture
 
 ![General streaming data flow](images/Live-Streaming-Data-Flow.png "General streaming data flow")
 
