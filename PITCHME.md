@@ -71,9 +71,16 @@ Note:
 We can use any encoding between recorder and stream server, as long as your stream server support it
 We focus on the section of Stream servers and Clients
 
+---
+
+# What's wrong with Real-Time Messaging Protocol? (RTMP)
+
+- RTMP streaming architecture
+- Drawbacks of RTMP streaming
+
 +++
 
-## Straming with Real-Time Messaging Protocol (RTMP)
+## RTMP streaming architecture
 
 ![RTMP streaming data flow](images/RTMP-Data-Flow.png "RTMP streaming data flow")
 
@@ -83,7 +90,7 @@ Require adobe flash player to play video in flv format
 
 +++
 
-## Drawback of RTMP streaming
+## Drawbacks of RTMP streaming
 
 - Flash is fading out
 - RTMP is not using 80/443 port
@@ -91,9 +98,12 @@ Require adobe flash player to play video in flv format
 
 Note:
 
-Not using 80/443 port is critical problem.
-- As we cannot create TCP socket in browser, we cannot get resource with browser only.
-- RTMP works well in mobile and desktop apps
+- We cannot use Adobe flash player
+- Not using 80/443 port is critical problem.
+    - As we cannot create TCP socket in browser, we cannot get resource with browser only.
+        - No HTML player support RTMP streaming
+    - RTMP works well in mobile and desktop apps
+
 HLS can solve the above problems
 
 ---
