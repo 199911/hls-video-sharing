@@ -73,7 +73,7 @@ We focus on the section of Stream servers and Clients
 
 ---
 
-# What's wrong with Real-Time Messaging Protocol? (RTMP)
+# What's wrong with RTMP?
 
 - RTMP streaming architecture
 - Drawbacks of RTMP streaming
@@ -81,6 +81,8 @@ We focus on the section of Stream servers and Clients
 +++
 
 ## RTMP streaming architecture
+
+#### Real-Time Messaging Protocol
 
 ![RTMP streaming data flow](images/RTMP-Data-Flow.png "RTMP streaming data flow")
 
@@ -111,25 +113,30 @@ HLS can solve the above problems
 # What is HTTP Live Streaming?
 
 - Support by modern browsers
-    - native or with media source extension API
 - HTTP(S) based
-    - All sources serve in HTTP(S)
 - Media can be served by Content Delivery Network (CDN)
+- Built-in adaptive bitrate
 
 Note:
 
-- HLS design and implemented by Apple
+- Support natively or with media source extension API
     - Apple's products have native support on this protocol
     - MSE support: https://caniuse.com/#search=mse
 - HTTP(S) based means
     - We can use 80/443 port to get all resources
     - The protocol is stateless where RTMP isn't
 - CDN is much cheaper than Edge servers
+- Will not cover ABR if don't have time
 
 +++
 
-Recorder --(raw file)--> encoder --(encoded file)--> Stream server --(Manifest file)--> HTML5 player with HLS support
-                                                       |--(encoded media files)--> CDN --(encoded media files)--^
+![HLS streaming data flow](images/HLS-Data-Flow.png "HLS streaming data flow")
+
+Note:
+
+- CDN serve large video files
+- Streaming server serve small manifest file
+    - manifest file is pointer to video files
 
 ---
 
