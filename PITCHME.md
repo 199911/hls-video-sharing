@@ -170,34 +170,35 @@ Note:
 
 - Open-source HTML5 player with large community
 - Good browser support (include IE)
+    - Use flash to polyfill HTML5 video API for old IEs
 - Plugin structure
     - You can publish a video.js plugin to share your custom skin / feature
-
-+++
-
-## Video.js 6 structure
-
-- Skin
-    - CSS hooked to Video.js classes
-- Component
-    - An UI component
-- Tech
-    - HTML5 / Flash
-
-Note:
-- Customize skin
-    - Override built in CSS
-    - Add custom class to components
-- Component
-    - Building blocks of the player UI
-    - Similar to React component which have create and delete hook in lifecycle
-- Tech
-    - Use flash to polyfill HTML5 video API for old IEs
 
 ---
 
 # Demonstration
 
-Notes:
+## Customizing Video.js 6
 
-OBS -> nginx-rtmp -> ngrok -> Github page player
+Note:
+
+- Change options
+- Customize skin
+- Component
+
++++
+
+# Demonstration
+
+## Live streaming
+
+Note:
+
+- OBS
+    - Add guide in read me
+- nginx-rtmp
+    - Build docker image for HLS
+- ngrok
+    - Add guid in read me
+- QR code scanner
+    - Let audience access the page
