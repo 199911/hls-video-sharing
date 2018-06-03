@@ -110,16 +110,21 @@ HLS can solve the above problems
 
 # What is HTTP Live Streaming?
 
-- Designed and implemented by Apple
+- Support by modern browsers
+    - native or with media source extension API
 - HTTP(S) based
-- Media can be served by Content Delivery Network
+    - All sources serve in HTTP(S)
+- Media can be served by Content Delivery Network (CDN)
 
 Note:
 
-Apple's products have native support on this protocol
-We can use 80/443 port to get all resources
-
-Mentions browser support in somewhere?
+- HLS design and implemented by Apple
+    - Apple's products have native support on this protocol
+    - MSE support: https://caniuse.com/#search=mse
+- HTTP(S) based means
+    - We can use 80/443 port to get all resources
+    - The protocol is stateless where RTMP isn't
+- CDN is much cheaper than Edge servers
 
 +++
 
