@@ -1,0 +1,38 @@
+<head>
+  <link href="/node_modules/video.js/dist/video-js.min.css" rel="stylesheet">
+  <style type="text/css">
+    /* Chrismax progress bar skin */
+    .vjs-progress-holder {
+      color: yellow !important;
+      background: green !important;
+    }
+    .vjs-play-progress {
+      background: red !important;
+    }
+  </style>
+  <script src="/node_modules/video.js/dist/video.min.js"></script>
+</head>
+
+<body>
+  <video id="my-player" class="video-js">
+    <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+    <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+  <script>
+    videojs(
+      'my-player',
+      // Video.js options http://docs.videojs.com/tutorial-options.html
+      {
+        controls: true,
+        autoplay: false,
+        preload: 'auto',
+        fluid: true
+      }
+    );
+  </script>
+</body>
