@@ -9,9 +9,9 @@ HTTP Live Streaming with Opensource HTML5 video player
 # Agenda
 
 - Live streaming introduction
-- What's wrong with RTMP?
+- RTMP?
 - HTTP Live Streaming
-- The HTML5 player framework - Video.js
+- Video.js 6 (The HTML5 player framework)
 - Customizing Video.js
 - Demonstration
 
@@ -65,16 +65,18 @@ Note:
 
 ---
 
-# What's wrong with RTMP?
+# RTMP?
 
-- RTMP streaming architecture
-- Drawbacks of RTMP streaming
+- Real-Time Messaging Protocol
+- It is one of the most popular protocol for streaming
+
+Note:
+
+We will introduce RTMP streaming architecture and the weaknesses of RTMP
 
 +++
 
 ## RTMP streaming architecture
-
-#### Real-Time Messaging Protocol
 
 ![RTMP streaming data flow](images/RTMP-Data-Flow.png "RTMP streaming data flow")
 
@@ -87,7 +89,7 @@ Note:
 
 +++
 
-## Drawbacks of RTMP streaming
+## Weaknesses of RTMP streaming
 
 - Flash is fading out
 - RTMP is not using 80/443 port
@@ -162,25 +164,35 @@ Note:
 - Each m3u8 stream contains a list of video fregments (.ts file)
 - Streaming server will continuously update these files
 
----
-
-# The HTML5 player framework - Video.js
+---?image=images/videojs6.png
 
 Note:
 
-- what is it
-- player structure
-- browser support
+- Open-source HTML5 player with large community
+- Good browser support (include IE)
+- Plugin structure
+    - You can publish a video.js plugin to share your custom skin / feature
 
----
++++
 
-# Customizing Video.js
+## Video.js 6 structure
 
-Notes:
+- Skin
+    - CSS hooked to Video.js classes
+- Component
+    - An UI component
+- Tech
+    - HTML5 / Flash
 
-- UI components
-- module
-- multiplexing
+Note:
+- Customize skin
+    - Override built in CSS
+    - Add custom class to components
+- Component
+    - Building blocks of the player UI
+    - Similar to React component which have create and delete hook in lifecycle
+- Tech
+    - Use flash to polyfill HTML5 video API for old IEs
 
 ---
 
