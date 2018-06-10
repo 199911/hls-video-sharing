@@ -171,8 +171,14 @@ Note:
 - Open-source HTML5 player with large community
 - Good browser support (include IE)
     - Use flash to polyfill HTML5 video API for old IEs
+- Configurable Player
+    - Customize skin
+    - Customize component
+    - Customize player technology
+        - If you invert a new video format, you can implement a multiplexer to support your own video format in Video.js
 - Plugin structure
     - You can publish a video.js plugin to share your custom skin / feature
+    - Provide a better way to organize your customization
 
 ---
 
@@ -180,13 +186,25 @@ Note:
 
 ## Live streaming
 
+![](images/HLS-Demo-Data-Flow.png)
+
 Note:
 
-- OBS
-    - Add guide in read me
-- nginx-rtmp
-    - Build docker image for HLS
-- ngrok
-    - Add guid in read me
-- QR code scanner
-    - Let audience access the page
+1. Show the demo infrastructure
+    - We don't have CDN
+    - We have a reverse proxy for public access
+2. Demo
+    - OBS
+        - Encoder
+        - How to config OBS
+    - Nginx with rtmp module in docker
+        - Stream server
+        - Show docker file
+        - Show nginx config file
+        - Show the command build and run the nginx
+    - Video js & browser
+        - Client
+        - Can show the code later
+    - ngrok
+        - Reverse proxy for public network access the local stream
+    - Let audience access the player through QR code scanner
