@@ -1,3 +1,4 @@
 node_modules
 !node_modules/video.js/dist/video.min.js
 !node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js
+!node_modules/video.js/dist/video-js.min.css
