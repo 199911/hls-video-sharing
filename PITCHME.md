@@ -6,6 +6,14 @@ HTTP Live Streaming with Opensource HTML5 video player
 
 +++
 
+![Sunday Ku](https://avatars1.githubusercontent.com/u/5357599?s=400&u=a7228f36d9279fcc60604139a1fc1e3f3fdd4143&v=4)
+
+- Software Engineer in HK01
+    - Rebuild HK01 web video player with videojs
+    - Focus on backend role now
+
++++
+
 # Agenda
 
 - Live streaming introduction
@@ -21,8 +29,8 @@ HTTP Live Streaming with Opensource HTML5 video player
 
 - Focus on video delivery
 - Focus on desktop and mobile web client
-- Demo with code open-sourced
-    - Will not have code walkthrough
+- Demo with open-sourced tools & code
+    - You can reproduce the demo at home
 
 Note:
 
