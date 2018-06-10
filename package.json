@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/199911/hls-video-sharing#readme",
   "dependencies": {
-    "video.js": "6"
+    "video.js": "6",
+    "videojs-contrib-hls": "^5.14.1"
   }
 }
