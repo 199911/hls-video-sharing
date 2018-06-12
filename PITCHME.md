@@ -150,7 +150,9 @@ Note:
 
 +++
 
-## HLS manifest files (m3u8 playlist)
+## HLS manifest files
+
+##### m3u8 playlist
 
 ![](images/hls-playlist.png)
 
@@ -163,7 +165,9 @@ Note:
 
 +++
 
-## HLS manifest files (m3u8 stream)
+## HLS manifest files
+
+##### m3u8 stream
 
 ![](images/hls-stream.png)
 
