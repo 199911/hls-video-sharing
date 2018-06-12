@@ -27,26 +27,27 @@ Opensource HTML5 video player with HTTP Live Streaming
 # Context
 
 - Focus on video delivery
-- Focus on desktop and mobile web client
+- Focus on browsers
 
 Note:
 
-Will not mention detail of video recording, encoding nor transcoding
-Will not discuss desktop and mobile apps
+- Will not mention detail of video recording, compression
+- Will not discuss desktop and mobile apps
 
 ---
 
-## Live streaming terminlogy
+## Terms
 
-- Live streaming: Simultaneously record and broadcast video
-- Encode: Convert raw video to "portable" video format
-- Transcode: Convert video from a format to another
+- Encode
+    - Convert raw video to "portable" video format
+- Transcode
+    - Convert video from a format to another
 
 Note:
 
-Encode / Transcode: It may change the quality
-Encode ~= compile, convert raw video to some format can be played by common players
-Transcode ~= transpile, translate from one format to another
+- Encode / Transcode: It may change the quality
+- Encode ~= compile, convert raw video to some format can be played by common players
+- Transcode ~= transpile, translate from one format to another
 
 +++
 
