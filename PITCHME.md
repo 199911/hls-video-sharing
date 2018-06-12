@@ -1,6 +1,6 @@
 # Video.js with HLS
 
-HTTP Live Streaming with Opensource HTML5 video player
+Opensource HTML5 video player with HTTP Live Streaming
 
 ##### Sunday Ku
 
@@ -19,8 +19,7 @@ HTTP Live Streaming with Opensource HTML5 video player
 - Live streaming introduction
 - RTMP?
 - HTTP Live Streaming
-- Video.js 6 (The HTML5 player framework)
-- Customizing Video.js
+- Video.js
 - Demonstration
 
 +++
@@ -29,23 +28,13 @@ HTTP Live Streaming with Opensource HTML5 video player
 
 - Focus on video delivery
 - Focus on desktop and mobile web client
-- Demo with open-sourced tools & code
-    - You can reproduce the demo at home
 
 Note:
 
 Will not mention detail of video recording, encoding nor transcoding
 Will not discuss desktop and mobile apps
-Don't have enough time, read the demo code yourself
 
 ---
-
-# Live streaming introduction
-
-- Live streaming terminlogy
-- Live streaming architecture
-
-+++
 
 ## Live streaming terminlogy
 
@@ -107,6 +96,7 @@ Note:
 
 - We cannot use Adobe flash player
 - Not using 80/443 port is critical problem.
+    - It use 1935 port
     - As we cannot create TCP socket in browser, we cannot get resource with browser only.
         - No HTML player support RTMP streaming
     - RTMP works well in mobile and desktop apps
