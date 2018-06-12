@@ -45,9 +45,12 @@ Note:
 
 Note:
 
-- Encode / Transcode: It may change the quality
-- Encode ~= compile, convert raw video to some format can be played by common players
-- Transcode ~= transpile, translate from one format to another
+- Encode ~= compile
+    - reduce raw video file size
+- Transcode ~= transpile
+    - covert video to a more comment format, for backward compatibility
+    - translate from one format to another
+- Encode & Transcode may change the quality
 
 +++
 
