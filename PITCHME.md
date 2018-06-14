@@ -83,7 +83,9 @@ We will introduce RTMP streaming architecture and the weaknesses of RTMP
 
 Note:
 
-- Orgin stream server: "Seed" of the video delivery
+- Orgin stream server
+    - "Seed" of the video delivery
+    - Transcode the video to flv
 - Edge stream server: Repeater of the origin stream server
     - Edge stream server ~= content delievery network
 - Require adobe flash player to play video in flv format
