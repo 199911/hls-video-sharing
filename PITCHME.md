@@ -8,9 +8,11 @@ Opensource HTML5 video player with HTTP Live Streaming
 
 ![Sunday Ku](https://avatars1.githubusercontent.com/u/5357599?s=400&u=a7228f36d9279fcc60604139a1fc1e3f3fdd4143&v=4)
 
+Notes:
+
+- Software Engineering Intern in 500 Startups
+- Software Engineer in Lifehack
 - Software Engineer in HK01
-    - Rebuild HK01 web video player with videojs
-    - Focus on backend role now
 
 +++
 
@@ -31,8 +33,8 @@ Opensource HTML5 video player with HTTP Live Streaming
 
 Note:
 
-- Will not mention detail of video recording, compression
-- Will not discuss desktop and mobile apps
+- Will talk about how video send to client, will not cover detail of video recording and compression
+- Will about web browser, will not discuss desktop and mobile apps
 
 ---
 
@@ -45,12 +47,13 @@ Note:
 
 Note:
 
-- Encode ~= compile
+- Encoding is similar to compiling source code to binary
     - reduce raw video file size
-- Transcode ~= transpile
+    - reduce deplay cause by network
+- Transcode is similar to transpile source code from a specific language to another language
     - covert video to a more comment format, for backward compatibility
     - translate from one format to another
-- Encode & Transcode may change the quality
+- Encode & Transcode may decrease the quality of video
 
 +++
 
@@ -87,7 +90,7 @@ Note:
     - "Seed" of the video delivery
     - Transcode the video to flv
 - Edge stream server: Repeater of the origin stream server
-    - Edge stream server ~= content delievery network
+    - Edge stream server is similar to content delievery network
 - Require adobe flash player to play video in flv format
 
 +++
@@ -122,11 +125,12 @@ Note:
 
 - Support natively or with media source extension API
     - Apple's products have native support on this protocol
-    - MSE support: https://caniuse.com/#search=mse
+    - Browsers without native support may need MSE support: https://caniuse.com/#search=mse
 - HTTP(S) based means
     - We can use 80/443 port to get all resources
     - The protocol is stateless where RTMP isn't
 - CDN is much cheaper than Edge servers
+    - We can use CDN because all resource is served by HTTP
 - Will not cover ABR if don't have time
 
 +++
